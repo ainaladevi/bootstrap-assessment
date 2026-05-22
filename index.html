@@ -1,133 +1,313 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="author" content="Ainala Devi" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>BootStrap Task</title>
-    <style>
-      .hero {
-        background-image: url(banner-bg.jpg);
-        background-size: cover;
-        background-position: center;
-        padding: 100px 0;
-      }
-      .hero1 {
-        position: relative;
-        bottom: -200px;
-      }
-      .hero2{
-        margin-top: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="d-flex justify-content-evenly">
-      <div class="align-items-center pt-4">
-        <img src="logo.png" alt="logo" width="150" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="author" content="Ainala Devi" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>BootStrap Task</title>
+  <style>
+    .hero {
+      background-image: url(banner-bg.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+    }
+
+    .hero1 {
+      position: relative;
+      bottom: -200px;
+    }
+
+    .hero2 {
+      margin-top: 200px;
+    }
+
+    .hero3 {
+      background-image: url(closed-bg.jpg);
+      background-position: center;
+      background-size: cover;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="d-flex justify-content-evenly">
+    <div class="align-items-center pt-4">
+      <img src="logo.png" alt="logo" width="150" />
+    </div>
+    <nav class="navbar bg-primary p-4">
+      <a class="nav-link text-white px-4" href="home"> HOME </a>
+      <a class="nav-link text-white px-4" href="photos">PHOTOS & VIDEOS</a>
+      <a class="nav-link text-white px-4" href="categories">CATEGORIES</a>
+      <a class="nav-link text-white px-4" href="Users">USERS</a>
+    </nav>
+    <div class="btn pt-4">
+      <a class="btn btn-outline-primary text-primary px-2" href="#"><img src="icon-03.png" alt="icon" />Sign in/Up</a>
+    </div>
+  </header>
+  <section class="hero position-relative">
+    <h1 class="text-white text-center mt-1 pt-5">
+      Enter a world Of <span class="text-primary">Photos</span> & Amazing<br />
+      <span class="text-primary">Awards</span>
+    </h1>
+    <hr class="text-white mx-5" />
+    <p class="fs-5 text-center text-light mx-5 px-5">
+      SnapX Photography is a professional website template with 5 different
+      HTML pages for maximum customizations. It is free for commercial usage.
+      This Bootstrap v5.1.3 CSS layout is provided by TemplateMO Free CSS
+      Template
+    </p>
+    <div class="text-center mt-5">
+      <div class="btn btn-outline-light text-light m-5 text-center">
+        Explore SnapX Contest
       </div>
-      <nav class="navbar bg-primary p-4">
-        <a class="nav-link text-white px-4" href="home"> HOME </a>
-        <a class="nav-link text-white px-4" href="photos">PHOTOS & VIDEOS</a>
-        <a class="nav-link text-white px-4" href="categories">CATEGORIES</a>
-        <a class="nav-link text-white px-4" href="Users">USERS</a>
-      </nav>
-      <div class="btn pt-4">
-        <a class="btn btn-outline-primary text-primary px-2" href="#"
-          ><img src="icon-03.png" alt="icon" />Sign in/Up</a
-        >
-      </div>
-    </header>
-    <section class="hero position-relative">
-      <h1 class="text-white text-center mt-1 pt-5">
-        Enter a world Of <span class="text-primary">Photos</span> & Amazing<br />
-        <span class="text-primary">Awards</span>
-      </h1>
-      <hr class="text-white mx-5" />
-      <p class="fs-5 text-center text-light mx-5 px-5">
-        SnapX Photography is a professional website template with 5 different
-        HTML pages for maximum customizations. It is free for commercial usage.
-        This Bootstrap v5.1.3 CSS layout is provided by TemplateMO Free CSS
-        Template
-      </p>
-      <div class="text-center mt-5">
-        <div class="btn btn-outline-light text-light m-5 text-center">
-          Explore SnapX Contest
+      <a class="text-light text-decoration-none" href="#"><img src="play.jpg" width="10px" height="10px" />Watch Our
+        Video
+        Now</a>
+    </div>
+    <div class="hero1">
+      <div class="d-flex justify-content-between mt-5">
+        <div class="rounded-circle bg-primary my-5 mx-5 py-3 px-3">
+          <img src="prev.png" alt="prev" width="50px" />
         </div>
-        <a class="text-light text-decoration-none" href="#"
-          ><img src="play.jpg" width="10px" height="10px" />Watch Our Video
-          Now</a
-        >
-      </div>
-      <div class="hero1">
-        <div class="d-flex justify-content-between mt-5">
-          <div class="rounded-circle bg-primary my-5 mx-5 py-3 px-3">
-            <img src="prev.png" alt="prev" width="50px" />
-          </div>
-          <div>
-            <img
-              class="rounded"
-              src="featured-03.jpg"
-              alt="featued3"
-              width="250px"
-              height="200px"
-            />
-          </div>
-          <div class="bg-secondary rounded mx-5 p-2">
-            <h3 class="text-primary">
-              Walk in Nature
-              <span class="text-light fw-light fs-5">(4.5)</span>
-            </h3>
-            <br />
-            <p class="text-dark fw-bold">
-              Contest Winner:
-              <span class="text-light fw-light">Thomas Eddy</span>
-            </p>
-            <p class="text-dark fw-bold">
-              Contest Author:
-              <span class="text-light fw-light">Anthony Soft</span>
-            </p>
-            <p class="text-dark fw-bold">
-              Awards:
-              <span class="text-light fw-light">$8,400 + Canon EOS R1</span>
-            </p>
-          </div>
-          <div>
-            <img
-              src="featured-02.jpg"
-              alt="featured2"
-              width="250px"
-              height="200px"
-              class="rounded"
-            />
-          </div>
-          <div class="rounded-circle bg-primary my-5 mx-5 py-3 px-3">
-            <img src="next1.png" alt="next" width="50px" height="50px" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hero2">
-      <div class="d-flex justify-content-between mx-5">
         <div>
-          <p class="fs-6 text-primary">OUR CATEGORIES</p>
-          <h3 class="text-dark">
-            Check Out <span class="text-primary">Popular</span> Contest
-            <span class="text-primary">Categories</span>
+          <img class="rounded" src="featured-03.jpg" alt="featued3" width="250px" height="200px" />
+        </div>
+        <div class="bg-secondary rounded mx-5 p-2">
+          <h3 class="text-primary">
+            Walk in Nature
+            <span class="text-light fw-light fs-5">(4.5)</span>
           </h3>
+          <br />
+          <p class="text-dark fw-bold">
+            Contest Winner:
+            <span class="text-light fw-light">Thomas Eddy</span>
+          </p>
+          <p class="text-dark fw-bold">
+            Contest Author:
+            <span class="text-light fw-light">Anthony Soft</span>
+          </p>
+          <p class="text-dark fw-bold">
+            Awards:
+            <span class="text-light fw-light">$8,400 + Canon EOS R1</span>
+          </p>
         </div>
         <div>
-          <a class="btn bg-primary text-light fs-6 p-3" href="#"
-            >Discover All Categories</a
-          >
+          <img src="featured-02.jpg" alt="featured2" width="250px" height="200px" class="rounded" />
+        </div>
+        <div class="rounded-circle bg-primary my-5 mx-5 py-3 px-3">
+          <img src="next1.png" alt="next" width="50px" height="50px" />
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+  <section class="hero2">
+    <div class="d-flex justify-content-between mx-5">
+      <div>
+        <p class="fs-6 text-primary">OUR CATEGORIES</p>
+        <h3 class="text-dark">
+          Check Out <span class="text-primary">Popular</span> Contest
+          <span class="text-primary">Categories</span>
+        </h3>
+      </div>
+      <div>
+        <a class="btn bg-primary text-light fs-6 p-3" href="#">Discover All Categories</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="border rounded p-1 mt-5">
+            <div class="d-flex align-items-start mt-3 gap-3">
+              <img src="icon-01.png" alt="icon1" height="40px" />
+              <div>
+                <h5>National Pic Contest</h5>
+                <div class="d-flex align-items-center gap-3">
+                  <span class="text-primary">126</span>
+                  <span class="text-secondary">Available Contests</span>
+                </div>
+              </div>
+            </div>
+            <img src="popular-01.png" alt="popular1" class="mt-3 rounded" width="250px">
+            <a href="#" class="text-primary btn btn-outline-primary mt-3 ms-3 rounded align-items-center">Browse Nature
+              Pic Contests</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border rounded p-1 mt-5">
+            <div class="d-flex align-items-start mt-3 gap-3">
+              <img src="icon-02.png" alt="icon2" height="40px" />
+              <div>
+                <h5>Random Pic Contest</h5>
+                <div class="d-flex align-items-center gap-3">
+                  <span class="text-primary">116</span>
+                  <span class="text-secondary">Available Contests</span>
+                </div>
+              </div>
+            </div>
+            <img src="popular-02.png" alt="popular1" class="mt-3 rounded" width="250px">
+            <a href="#" class="text-primary btn btn-outline-primary mt-3 ms-2 rounded align-items-center">Browse Nature
+              Pic
+              Contests</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border rounded p-1 mt-5">
+            <div class="d-flex align-items-start mt-3 gap-3">
+              <img src="icon-03.png" alt="icon3" height="40px" />
+              <div>
+                <h5>Portrait Pic Contest</h5>
+                <div class="d-flex align-items-center gap-3">
+                  <span class="text-primary">164</span>
+                  <span class="text-secondary">Available Contests</span>
+                </div>
+              </div>
+            </div>
+            <img src="popular-03.png" alt="popular1" class="mt-3 rounded" width="250px">
+            <a href="#" class="text-primary btn btn-outline-primary mt-3 ms-2 rounded align-items-center">Browse Nature
+              Pic
+              Contests</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border rounded p-1 mt-5">
+            <div class="d-flex align-items-start mt-3 gap-3">
+              <img src="icon-04.png" alt="icon4" height="30px" />
+              <div>
+                <h5>Space Pic Contest</h5>
+                <div class="d-flex align-items-center gap-3">
+                  <span class="text-primary">135</span>
+                  <span class="text-secondary">Available Contests</span>
+                </div>
+              </div>
+            </div>
+            <img src="popular-04.png" alt="popular1" class="mt-3 rounded" width="250px">
+            <a href="#" class="text-primary btn btn-outline-primary mt-3 ms-2 rounded align-items-center">Browse Nature
+              Pic
+              Contests</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero3">
+    <div class="text-primary text-center mt-5 pt-5">
+      <p class="mt-5">CLOSED PHOTOGRAPHY CONTESTS</p>
+      <h4>Previous Contests <span class="text-dark">With Handpicked</span> Winners</h4>
+    </div>
+    <div class="container">
+      <div class="row g-4 mt-5">
+        <div class="d-flex justify-content-evenly mt-5">
+          <div class="col-3">
+            <img src="closed-02.jpg" alt="closed2" class="rounded" width="275px mt-4">
+            <div class="d-flex justify-content-between bg-light round">
+              <div>
+                <p class="fw-bold mt-3">96 Participants</p>
+                <p>Number of Artists</p>
+              </div>
+              <div>
+                <p class="fw-bold mt-3">410 Pictures</p>
+                <p>Submitted Pics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <img src="closed-03.jpg" alt="closed3" class="rounded" width="275px mt-4">
+            <div class="d-flex justify-content-between bg-light round">
+              <div>
+                <p class="fw-bold mt-3">74 Participants</p>
+                <p>Number of Artists</p>
+              </div>
+              <div>
+                <p class="fw-bold mt-3">284 Pictures</p>
+                <p>Submitted Pics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <img src="closed-01.jpg" alt="closed1" class="rounded" width="275px mt-4">
+            <div class="d-flex justify-content-between bg-light round">
+              <div>
+                <p class="fw-bold mt-3">88 Participants</p>
+                <p>Number of Artists</p>
+              </div>
+              <div>
+                <p class="fw-bold mt-3">320 Pictures</p>
+                <p>Submitted Pics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" p-5 text-center">
+      <a href="#" class="btn btn-outline-primary">Browse Open Contests</a>
+    </div>
+  </section>
+  <section class="mt-5">
+    <div class="text-center mt-5 p-5">
+      <p class="text-primary">OUR PRICING</p>
+      <h3 class="text-primary fw-bold">Photography <span class="text-dark">Contest Plans</span> And Price <span
+          class="text-dark">Awards</span></h3>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="d-flex justify-content-evenly g-3">
+        <div class="col-md-3 ">
+          <div class="border rounded p-3 text-center">
+            <img src="pricing-01.jpg" alt="pricing1">
+            <h5 class="my-4">Basic Plan</h5>
+            <hr>
+            <p class="text-primary">Lorem Ipsum Dolores Sonte<br />Songe Lorem Ipsum Dol<br />Matrios
+              Venga Heptuss<br>
+              <del class="text-secondary">Denim Sriracha Kogi<br />Digital Photography Awards</del>
+            </p>
+            <br />
+            <h3 class="text-primary">$25 USD</h3>
+            <br />
+            <a href="#" class="btn btn-outline-primary text-primary">Choose This Plan</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="border rounded p-3 text-center">
+            <img src="pricing-02.jpg" alt="pricing2">
+            <h5 class="my-4">Standard Plan</h5>
+            <hr>
+            <p class="text-primary">Lorem Ipsum Dolores Sonte<br />Songe Lorem Ipsum Dol<br />Matrios
+              Venga Heptuss<br>
+              Denim Sriracha Kogi<br /><del class="text-secondary">Digital Photography Awards</del>
+            </p>
+            <br />
+            <h3 class="text-primary">$45 USD</h3>
+            <br />
+            <a href="#" class="btn btn-outline-primary text-primary">Choose This Plan</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="border rounded p-3 text-center">
+            <img src="pricing-03.jpg" alt="pricing3">
+            <h5 class="my-4">Basic Plan</h5>
+            <hr>
+            <p class="text-primary">Lorem Ipsum Dolores Sonte<br />Songe Lorem Ipsum Dol<br />Matrios
+              Venga Heptuss<br>
+              Denim Sriracha Kogi<br />Digital Photography Awards
+            </p>
+            <br />
+            <h3 class="text-primary">$85 USD</h3>
+            <br />
+            <a href="#" class="btn btn-outline-primary text-primary">Choose This Plan</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="mt-5">
+    <p class="text-light bg-primary text-center p-4">Copyright &copy; 2022 <b>SnapX</b> Photo Contest Co., Ltd. All Rights reserved. Design: TemplateMO </p>
+  </footer>
+</body>
+
 </html>

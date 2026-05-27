@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Home 2 || Itco NextJS 14 Template</title>
+    <link rel="icon" type="image" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .header {
+            background-color: #E8FFFE;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            left: 0;
+            display: flex;
+            z-index: 1000;
+            background-color: #073F40;
+        }
+
+        .hero {
+            margin-top: 200px;
+            padding-bottom: 100px;
+        }
+
+        .hero .b1 {
+            background-color: #073F40;
+        }
+
+        .hero1 {
+            margin-top: 100px;
+        }
+
+        .hero2 {
+            background-color: #E8FFFE;
+            margin-top: 100px;
+            padding-top: 150px;
+        }
+
+        .experience-box {
+            position: relative;
+            bottom: 250px;
+            right: -350px;
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 8px solid white;
+            width: 200px;
+            height: 250px;
+        }
+
+        .hero3 {
+            background-color: #073F40;
+        }
+
+        .hero4 {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+        .project-card {
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .project-card img {
+            width: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 0;
+            bottom: -180px;
+            width: 100%;
+            transition: 0.5s ease;
+        }
+
+        .project-card:hover .overlay {
+            bottom: 0;
+        }
+
+        .project-info {
+            background-color: green;
+            color: white;
+            pad: 20px;
+
+        }
+
+        .arrow {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin: -45px auto 20px;
+            border: 8px solid white;
+        }
+
+        .hero5 {
+            background-color: #E8FFFE;
+            padding-top: 100px;
+        }
+
+        .project-card1 {
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .project-card1:hover .overlay1 {
+            top: 0px;
+        }
+
+        .content {
+            width: 5%;
+            background-color: green;
+            border-radius: 20px;
+        }
+
+        .overlay1 {
+            position: absolute;
+            left: 300px;
+            top: -100px;
+            ;
+            width: 100%;
+            transition: 0.5s ease;
+        }
+
+        .hero6 {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="top-bar text-dark py-2">
+            <div class="container d-flex justify-content-between gap-3">
+                <div>
+                    <i class="bi bi-geo-alt text-dark "></i>&nbsp; Jones Street, New York, USA &nbsp;&nbsp;||
+                    &nbsp;&nbsp;
+                    <a href="mailto:info@example.com" class="text-decoration-none text-dark"><i
+                            class="bi bi-envelope text-dark"></i>&nbsp;Info@example.com || </a>&nbsp;&nbsp;
+                    <a href="tel: +70264566579" class="text-decoration-none text-dark"><i
+                            class="bi bi-telephone text-dark"></i>+
+                        7026
+                        566
+                        579</a>
+                </div>
+                <div>
+                    <i class="bi bi-facebook text-dark"></i>&nbsp;&nbsp;
+                    <i class="bi bi-linkedin text-dark"></i>&nbsp;&nbsp;
+                    <i class="bi bi-twitter text-dark"></i>&nbsp;&nbsp;
+                    <i class="bi bi-instagram text-dark"></i>&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="container  rounded-5  mt-3">
+            <nav class="navbar navbar-expand-lg  fixed-top-shadow rounded-4 sticky-top px-4 py-3 ">
+                <img src="logo1.png" alt="logo">
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class=" nav-link dropdown-toggle text-decoration-none text-light" role="button"
+                                data-bs-toogle="dropdown">&nbsp;&nbsp;Home</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item bg-success text-white py-3" href="#">Home One</a></li>
+                                <li><a class="dropdown-item  text-secondary py-3" href="home2.html">Home Two</a>
+                                </li>
+                                <li><a class="dropdown-item  text-secondary py-3" href="#">Home Three</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a href="about"
+                                class="text-decoration-none text-light">&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+                        <li class="nav-item"><a href="services"
+                                class="text-decoration-none text-light">&nbsp;&nbsp;&nbsp;&nbsp;Services</a>
+                        </li>
+                        <li class="nav-item"><a href="pages"
+                                class="text-decoration-none text-light">&nbsp;&nbsp;&nbsp;&nbsp;Pages</a></li>
+                        <li class="nav-item"><a href="blog"
+                                class="text-decoration-none text-light">&nbsp;&nbsp;&nbsp;&nbsp;Blog</a></li>
+                        <li class="nav-item"><a href="contact"
+                                class="text-decoration-none text-light">&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
+                    </ul>
+                    <button class="btn btn-success px-4 py-2 text-light">Get A Free Quote</button>
+                </div>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="row p-3">
+                <div class="col-lg-5 ">
+                    <p class="fs-5 text-success">Top IT Solution Services Team</p>
+                    <h1 class="fw-bold fs-1">IT consulting service for your business.</h1>
+                    <p class="text-dark fs-5">Leverage agile frameworks to provide a robust synopsis for high level
+                        overviews terative approaches bring table survival.</p>
+                    <button class="btn text-light bg-success px-4 py-3 fw-bold fs-5 ms-3 mt-5">Read More</button>
+                    <button class="b1 btn text-light  px-4 py-3 fw-bold fs-5 ms-5 mt-5">Contact Us</button>
+                </div>
+                <div class="col-lg-7">
+                    <img src="img (1).png" alt="img1" width="700px" class="rounded">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="hero1">
+        <div class="text-center">
+            <p class="text-success fs-4 fw-bold">What We Do</p>
+            <h1 class="fs-1 fw-bold">Services That Help You<br> Grow</h1>
+        </div>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 bg-light">
+                    <img src="img (2).png" alt="img2" width="350px" class="rounded">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h5 class="fw-bold   mt-5"><a href="#" class="text-decoration-none text-dark fs-5">Content
+                                    Management</a></h5>
+                            <p class="text-secondary fs-6">We focus on the best practices it solutions and for
+                                services.</p>
+                            <a href="#" class="text-decoration-none text-success mt-5 fw-bold fs-5">Read More -></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="automation.png" alt="automation" width="70px" class="mt-5">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img (3).png" alt="img3" width="350px" class="rounded">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h5 class="fw-bold   mt-5"><a href="#"
+                                    class="text-decoration-none text-dark fs-5">Information Security</a></h5>
+                            <p class="text-secondary fs-6">We focus on the best practices it solutions and for
+                                services.</p>
+                            <a href="#" class="text-decoration-none text-success mt-5 fw-bold fs-5">Read More -></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="lock.jpg" alt="automation" width="70px" class="mt-5">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img (4).png" alt="img4" width="350px" class="rounded">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h5 class="fw-bold   mt-5"><a href="#" class="text-decoration-none text-dark fs-5">Software
+                                    Development</a></h5>
+                            <p class="text-secondary fs-6">We focus on the best practices it solutions and for
+                                services.</p>
+                            <a href="#" class="text-decoration-none text-success mt-5 fw-bold fs-5">Read More -></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="test.png" alt="automation" width="70px" class="mt-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="hero2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img (5).png" class="rounded img-fluid" width="600px">
+                    <div class="experience-box">
+                        <h1 class="fw-bold">25+</h1>
+                        <h4>Years Of</h4>
+                        <h4>Experience</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-5">
+                    <p class="fw-bold fs-5 text-success">About Us</p>
+                    <h1 class="text-dark fw-bold fs-1">We Execute Our ideas From The Start to Finish</h1>
+                    <p class="text-dark fs-5">Solve Business Problems And Automate Workflows With Artificial Work
+                        Intelligence-Based Solutions. Unlock The Hidden Power Of The Data You Already Have And Hand
+                        Hampers The Creativity.</p>
+                    <h5 class="fw-bold fs-5 text-dark mt-5"><i
+                            class="bi bi-file-check-fill text-success"></i>&nbsp;&nbsp;Development of Financial Models
+                    </h5>
+                    <h5 class="fw-bold fs-5 text-dark mt-3"><i
+                            class="bi bi-file-check-fill text-success"></i>&nbsp;&nbsp;Nifty team is a diverse network
+                        of consultants</h5>
+                    <h5 class="fw-bold fs-5 text-dark mt-3"><i
+                            class="bi bi-file-check-fill text-success"></i>&nbsp;&nbsp;Industry professionals with a
+                        global mindset</h5>
+                    <button class="btn bg-success text-light rounded px-4 py-2 fw-bold mt-5">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="hero3 col-lg-5 mt-2">
+                <h1 class="text-light ms-5 mt-5">Subscribe to Our Newsletter</h1>
+                <p class="fs-5  text-light mt-2 ms-5">It is a long established fact that a reader will be distracted by
+                    the readable
+                    content of a page when looking at its layout.</p>
+                <input type="text" placeholder="Enter Your Email" class="ms-5 mt-4 rounded py-3 px-3">
+                <button class="btn btn-success text-light rounded ms-3  py-3 px-5">Subscribe Now</button>
+            </div>
+            <div class="col-lg-7">
+                <img src="img.png" height="400px" width="800px">
+            </div>
+        </div>
+    </section>
+    <section class="hero4">
+        <div class="text-center">
+            <h6 class="text-success fs-5 fw-bold">Latest Our Projects</h6>
+            <h1 class="fw-bold mb-4">Some Of Our Work</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="project-card">
+                        <img src="img (6).png" class="rounded" alt="img6" width="350px" height="400px">
+                        <div class="overlay">
+                            <div class="arrow">
+                                <i class="bi bi-arrow-up-right text-light"></i>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="fw-bold">Software Development</h3>
+                                <p>Portfolio Home - Futuristic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card">
+                        <img src="img (7).png" class="rounded" alt="img6" width="350px" height="400px">
+                        <div class="overlay">
+                            <div class="arrow">
+                                <i class="bi bi-arrow-up-right text-light"></i>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="fw-bold">Data Processing</h3>
+                                <p>Portfolio Home - Futuristic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card">
+                        <img src="img (8).png" class="rounded" alt="img6" width="350px" height="400px">
+                        <div class="overlay">
+                            <div class="arrow">
+                                <i class="bi bi-arrow-up-right text-light"></i>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="fw-bold">Digital marketing</h3>
+                                <p>Portfolio Home - Futuristic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero5">
+        <div>
+            <h5 class="text-success fw-bold fs-5">Our Team Members</h5>
+            <h1 class="text-dark fw-bold ">Building A Smarter future<br> Through IT</h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <div class="project-card1">
+                    <img src="img (9).png" alt="img9" class="rounded">
+                    <div class="text-center bg-light px-5 py-2">
+                        <h2 class="fw-bold">Edoardo Romussi</h2>
+                        <p>UI/UX Designer </p>
+                    </div>
+                    <div class="overlay1">
+                        <div class="content">
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-light w-5"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="bi bi-linkedin text-light"></i></a>
+                            <a href="https://x.com/"><i class="bi bi-twitter text-light"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="project-card1">
+                    <img src="img (10).png" alt="img9" class="rounded">
+                    <div class="text-center bg-light px-5 py-2">
+                        <h2 class="fw-bold">Jessica James</h2>
+                        <p>Marketing manager</p>
+                    </div>
+                    <div class="overlay1">
+                        <div class="content">
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-light w-5"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="bi bi-linkedin text-light"></i></a>
+                            <a href="https://x.com/"><i class="bi bi-twitter text-light"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="project-card1">
+                    <img src="img (11).png" alt="img9" class="rounded">
+                    <div class="text-center bg-light px-5 py-2">
+                        <h2 class="fw-bold">Adrian Williams</h2>
+                        <p>Web Designer </p>
+                    </div>
+                    <div class="overlay1">
+                        <div class="content">
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-light w-5"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="bi bi-linkedin text-light"></i></a>
+                            <a href="https://x.com/"><i class="bi bi-twitter text-light"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="hero3 my-5">
+        <div class="text-light text-center mt-5 p-5">
+            <h5 class="mt-5">We have more than <span class="text-success">270+</span> Happy Customers<br> with
+                satisfaction</h5>
+        </div>
+        <div class="d-flex justify-content-evenly p-5 mb-5">
+            <img src="brand1.png" alt="brand1">
+            <img src="brand2.png" alt="brand2">
+            <img src="brand3.png" alt="brand3">
+            <img src="brand4.png" alt="brand4">
+            <img src="brand5.png" alt="brand5">
+        </div>
+    </section>
+    <section class="hero6 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="text-success">FAQs</h5>
+                    <h1 class="fw-bold">Looking For Answers?</h1>
+                    <div class="accordion mt-5" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed bg-success text-white fw=bold"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What Does Having
+                                    Managed Your Service Provider?</button></h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

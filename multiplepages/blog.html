@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Blog || Itco NextJS 14 Template</title>
+    <link rel="icon" type="image" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .header {
+            background-color: #073F40;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        .hero {
+            margin-top: 300px;
+            padding-bottom: 100px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            left: 0;
+            display: flex;
+            z-index: 1000;
+        }
+
+        .hero1 {
+            margin-top: 100px;
+        }
+
+        .hero-inner {
+            background-color: #e8fffd;
+        }
+
+        .content {
+            border: 1px solid gray;
+            margin-top: 0px;
+            border-radius: 15px;
+        }
+        .content1 {
+            border: 1px solid gray;
+            margin-top: 40px;
+            border-radius: 15px;
+        }
+        .hero-footer {
+            background-color: #073F40;
+            padding-top: 100px;
+            bottom: -100px;
+        }
+
+        .hero3 {
+            position: relative;
+            border-radius: 25px;
+            margin-bottom: -70px;
+            z-index: 10;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="top-bar text-white py-2">
+            <div class="container d-flex justify-content-between gap-3">
+                <div>
+                    <i class="bi bi-geo-alt text-light "></i>&nbsp; Jones Street, New York, USA &nbsp;&nbsp;||
+                    &nbsp;&nbsp;
+                    <a href="mailto:info@example.com" class="text-decoration-none text-light"><i
+                            class="bi bi-envelope text-light"></i>&nbsp;Info@example.com || </a>&nbsp;&nbsp;
+                    <a href="tel: +70264566579" class="text-decoration-none text-light"><i
+                            class="bi bi-telephone text-light"></i>+
+                        7026
+                        566
+                        579</a>
+                </div>
+                <div>
+                    <i class="bi bi-facebook text-light"></i>&nbsp;&nbsp;
+                    <i class="bi bi-linkedin text-light"></i>&nbsp;&nbsp;
+                    <i class="bi bi-twitter text-light"></i>&nbsp;&nbsp;
+                    <i class="bi bi-instagram text-light"></i>&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="container rounded-5  mt-3">
+            <nav class="navbar navbar-expand-lg bg-white shadow rounded-4 sticky-top px-4 py-3 ">
+                <img src="logo1.png" alt="logo">
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mx-auto align-items-center">
+                        <li class="nav-item dropdown">
+                            <a href="#" class=" nav-link dropdown-toggle text-decoration-none text-success"
+                                role="button" data-bs-toogle="dropdown">&nbsp;&nbsp;Home</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item bg-success text-white py-3" href="home.html">Home One</a>
+                                </li>
+                                <li><a class="dropdown-item  text-secondary py-3" href="home2.html">Home Two</a></li>
+                                <li><a class="dropdown-item  text-secondary py-3" href="home.html">Home Three</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a href="about.html"
+                                class="nav-link text-decoration-none text-success">&nbsp;&nbsp;&nbsp;&nbsp;About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-decoration-none text-success" role="button"
+                                data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item bg-success text-white py-3"
+                                        href="services.html">Services</a></li>
+                                <li><a class="dropdown-item  text-secondary py-3" href="services.html">Service
+                                        Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a href="pages"
+                                class="nav-link dropdown-toggle text-decoration-none text-success" role="button"
+                                data-bs-toggle="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;Pages</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item bg-success text-white py-3" href="team.html">Team</a></li>
+                                <li><a class="dropdown-item  text-success py-3" href="team.html">Team Details</a></li>
+                                <li><a class="dropdown-item  text-success py-3" href="team.html">Project</a></li>
+                                <li><a class="dropdown-item  text-success py-3" href="team.html">Project Details</a>
+                                </li>
+                                <li><a class="dropdown-item  text-success py-3" href="team.html">Testinomials</a></li>
+                                <li><a class="dropdown-item  text-success py-3" href="team.html">Price Plan</a></li>
+                                <li><a class="dropdown-item  text-success py-3" href="team.html">FAQ</a></li>
+                                <li><a class="dropdown-item  text-success py-3" href="team.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a href="blog.html"
+                                class="nav-link dropdown-toggle text-decoration-none text-success" role="button"
+                                data-bs-toggle="dropdown">Blog</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item bg-success text-white py-3" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item  text-success py-3" href="blog.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="contact.html"
+                                class="nav-link text-decoration-none text-secondary">&nbsp;&nbsp;&nbsp;&nbsp;Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-success px-4 py-2 text-light">Get A Free Quote</button>
+                </div>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="d-flex justify-content-between text-light ">
+                <h1 class="text-white px-5">Blog Details</h1>
+                <div>
+                    <a href="home.html" class="text-decoration-none text-light fs-4 ">Home -></a>
+                    <a href="blog.html" class="text-decoration-none text-light fs-4 pe-5">Blog Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero1">
+        <div class="row">
+            <div class="col-lg-9">
+                <img src="ima (2).png" alt="img2" class="rounded  mb-3" width="900px"><br>
+                <i class="bi bi-person text-success fs-4 "></i> &nbsp;<a href="#"
+                    class="text-decoration-none text-dark fs-5 ">Admin</a>&nbsp;
+                <i class="bi bi-calendar text-success fs-5"></i> &nbsp;<a href="#"
+                    class="text-decoration-none text-dark fs-5 ">October 2, 2023</a>&nbsp;
+                <i class="bi bi-chat text-success fs-5"></i> &nbsp;<a href="#"
+                    class="text-decoration-none text-dark fs-5 ">Comment (03)</a>
+                <h1><a href="#" class="text-dark  text-decoration-none mt-5">Everything you need to learn about IT
+                        Solution<br> for your Company.
+                    </a></h1>
+                <p class="text-secondary fs-5 mt-5">With over a decade of experience, we’ve established ourselves as one
+                    of
+                    the
+                    pioneering agencies<br> in the . Our small, flexible, agile and design-led structures and processes
+                    allow us to be highly<br> responsive and innovative. We’re made of passionate leaders, strategists,
+                    managers, developers,<br> animators designer who work gether under one umbrella. We are a
+                    digitally-led,
+                    full-service creative<br> agency.</p>
+                <p class="text-secondary fs-5">The European languag are member of the same family. Their separate
+                    existence
+                    is a myth. Europe <br> same science, music, sport, etc, Europe uses the same vocabulary. The
+                    languages
+                    only differ in their<br> grammar, their samepronunciation and their most common words.</p>
+                <div class="hero-inner mt-5 p-4 fs-5 me-5">
+                    <p>Majority have suffered alteration in some form, by injected humour, or randomised words which<br>
+                        don’t look even slightly believable ”</p>
+                </div>
+                <p class="text-secondary fs-5 mt-5">Everyone realizes why a new common language would be desirable: one
+                    could
+                    refuse to necessary have uniform translators. To achieve this, it would be necessary to have uniform
+                    grammar, pronunciation and<br> more words. If several languages coalesce, the grammar of the
+                    resulting
+                    language is simple and regular <br>than that of the individual languages. The new common language
+                    will
+                    be more simple and regular than<br> the existin languages samepronunciation and their most common
+                    words.
+                </p>
+                <h2 class="fw-bold mt-5">Perfect From Beginning to End</h2>
+                <p class="text-secondary fs-5 mt-4">Transfer details Choose the amount you want to send abroad, select
+                    how
+                    your receiver wants to get the money, and lastly, how you want to pay. You will always see our fees
+                    upfront, the final amount you will<br> pay, and the exact amount your receiver will get.
+                </p>
+                <i class="bi bi-dot text-success fs-2"></i><span class="text-secondary fs-5">Aliquam Eros Justo, Posuere
+                    Loborti Robart That</span><br>
+                <i class="bi bi-dot text-success fs-2"></i><span class="text-secondary fs-5">Fermentum Ullamcorper
+                    Viverra Laoreet</span><br>
+                <i class="bi bi-dot text-success fs-2"></i><span class="text-secondary fs-5">Lobortis, Viverra Laoreet
+                    Augue Attis Hrculies</span><br>
+                <i class="bi bi-dot text-success fs-2"></i><span class="text-secondary fs-5">Fermentum Ullamcorper
+                    Viverra Laoreet</span>
+                <hr class="me-5">
+                <span class="my-5 fw-bold fs-5">Tag:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="home.html" class="text-success fs-5 text-decoration-none">#Technology</a>&nbsp;
+                <a href="home.html" class="text-success fs-5 text-decoration-none">#IT
+                    Business</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="fs-5 text-align-end">Share:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook text-dark fs-4"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin text-dark fs-4"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://x.com/"><i class="bi bi-twitter text-dark fs-4"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram text-dark fs-4"></i></a>
+                <hr class="me-5">
+                <div class="hero-inner mt-5 p-4 fs-5 me-5">
+                    <div class="d-flex align-items-center">
+                        <img src="image (30).png" alt="img30">
+                        <div class="d-flex justify-content-between w-100">
+                            <div>
+                                <h5>Ronald Richards</h5>
+                                <p class="fs-5">Founder & CEO</p>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/"><i
+                                        class="bi bi-facebook text-dark fs-4"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.linkedin.com/"><i
+                                        class="bi bi-linkedin text-dark fs-4"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="https://x.com/"><i
+                                        class="bi bi-twitter text-dark fs-4"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.instagram.com/"><i class="bi bi-instagram text-dark fs-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    Delicate and specialty items are handled with the utmost care. We have specialized processes for
+                    such items to ensure they are cleaned gently and returned to you in pristine condition.
+                </div>
+                <hr class="me-5">
+                <div>
+                    <div class="d-flex align-items-center">
+                        <img src="image (32).jpg" alt="img30">
+                        <div class="d-flex justify-content-between w-75">
+                            <div>
+                                <h5>Brooklyn Simmons</h5>
+                                <p class="fs-5"><i class="bi bi-calendar3 text-success"></i>28 April, 2023</p>
+                            </div>
+                            <div>
+                                <button class="btn bg-success text-light">Reply<i
+                                        class="bi bi-reply-fill text-light"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    There are many different types of roofing materials to choose from, including asphalt shingles,
+                    Metal roofing, wood shakes,<br> clay tiles, and slate. Each material has its
+                </div>
+                <hr class="me-5">
+                <hr class="me-5">
+                <div class="ms-5">
+                    <div class="d-flex align-items-center">
+                        <img src="image (31).jpg" alt="img30">
+                        <div class="d-flex justify-content-between w-75">
+                            <div>
+                                <h5>Marvin McKinney</h5>
+                                <p class="fs-5"><i class="bi bi-calendar3 text-success"></i>20 October, 2023</p>
+                            </div>
+                            <div>
+                                <button class="btn bg-success text-light">Reply<i
+                                        class="bi bi-reply-fill text-light"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    Is a statement that highlights the importance of providing high-quality auto repair services. It
+                    suggests that the<br> company or individual
+                </div>
+                <hr class="me-5">
+                <hr class="me-5">
+                <div>
+                    <div class="d-flex align-items-center">
+                        <img src="image (31).jpg" alt="img30">
+                        <div class="d-flex justify-content-between w-75">
+                            <div>
+                                <h5>Ronald Richards</h5>
+                                <p class="fs-5"><i class="bi bi-calendar3 text-success"></i>06 June, 2023</p>
+                            </div>
+                            <div>
+                                <button class="btn bg-success text-light">Reply<i
+                                        class="bi bi-reply-fill text-light"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    There are many different types of roofing materials to choose from, including asphalt shingles,
+                    Metal roofing, wood shakes,<br> clay tiles, and slate. Each material has its
+                </div>
+                <hr class="me-5">
+                <div class="content ps-3 me-5">
+                    <h2 class="mt-4">Add Your Comment</h2>
+                    <p class="text-secondary fs-5">Get in touch with us to see how we can help you with your project</p>
+                    <input type="text" placeholder="Enter Name" class="fs-4 px-5 rounded">&nbsp;&nbsp;
+                    <input type="text" placeholder="Enter Email" class="fs-4 px-5 rounded"><br>
+                    <textarea rows="5" cols="65" class="my-5 fs-4 rounded"
+                        placeholder="Enter Message ..."></textarea><br>
+                    <button type="submit" class="px-5 py-2 text-light bg-success rounded fs-5 mb-5">Submit</button>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="content me-5 py-4 px-3">
+                    <h4>Search</h4>
+                    <input type="search" class="form-control fs-5 py-4 bi bi-search" placeholder="Search Here ...">
+                </div>
+                <div class="content1 me-5 px-2">
+                    <h3>Categories</h3>
+                    <div class="content1 px-2 d-flex justify-content-around">
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">Content Management</a>
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">=></a>
+                    </div>
+                    <div class="content1 px-2 d-flex justify-content-around">
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">Information Security</a>
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">=></a>
+                    </div>
+                    <div class="content1 px-2 d-flex justify-content-around">
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">Software Development</a>
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">=></a>
+                    </div>
+                    <div class="content1 px-2 d-flex justify-content-around">
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">Web Analysis</a>
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">=></a>
+                    </div>
+                    <div class="content1 px-2 d-flex justify-content-around">
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">Digital Marketing</a>
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">=></a>
+                    </div>
+                    <div class="content1 px-2 d-flex justify-content-around mb-4">
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">Tech Support Pro</a>
+                        <a href="services.html" class="text-dark text-decoration-none p-3 fs-5 fw-bold">=></a>
+                    </div>
+                </div>
+                <div class="content1">
+                    <h3 class="text-dark my-3">Recent Post</h3>
+                <div class="row mb-3">
+                    <div class="col-lg-5 mb-4">
+                        <img src="image (22).png" alt="image22" class="rounded">
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="#" class=" text-decoration-none text-dark fs-6 mt-5 mb-4"><i
+                                class="bi bi-calendar3 text-success"></i>&nbsp;December 27, 2023</a>
+                        <a href="#" class="text-dark text-decoration-none fs-6 fw-bold">Efficiency redefined through
+                            technology.
+                        </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="image (23).png" alt="image22" class="rounded">
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="#" class=" text-decoration-none text-dark fs-6 mt-5 mb-4"><i
+                                class="bi bi-calendar3 text-success"></i>&nbsp;December 27, 2023</a>
+                        <a href="#" class="text-dark text-decoration-none fs-6 fw-bold">Efficiency redefined through
+                            technology.
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div class="content1 py-4">
+                    <h4 class="my-4">Tags</h4>
+                    <a href="home.html" class="bg-success p-2 rounded fs-5 text-decoration-none text-light">Interiour</a>&nbsp;
+                    <a href="home.html" class="bg-success p-2 rounded fs-5 text-decoration-none text-light">Software</a>&nbsp;
+                    <a href="home.html" class="bg-success p-2 rounded fs-5 text-decoration-none text-light">Design</a>&nbsp;<br><br>
+                    <a href="home.html" class="bg-success p-2 rounded fs-5 text-decoration-none text-light">Web Planting</a>&nbsp;<br><br>
+                    <a href="home.html" class="bg-success p-2 rounded fs-5 text-decoration-none text-light mb-4">Daily Inspiration</a>&nbsp;
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero3">
+        <div class="container mt-5">
+            <div class="row bg-success rounded">
+                <div class="col-lg-5">
+                    <h3 class="text-light fw-bold py-5">Subscribe to Our Newsletter for the daily Updates</h3>
+                </div>
+                <div class="col-lg-7">
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter Your Email" class="form-control p-3 mt-5">
+                        <button
+                            class="btn btn-success text-light fw-bold px-5 mt-5 btn-outline-light">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="hero-footer">
+        <div class="row">
+            <div class="col-lg-3 my-5">
+                <img src="image.png" alt="image">
+                <p class="fs-5 my-5 text-light">Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ
+                    puru rhoncu tincidunt odio
+                    ultrices. Sed odio feugiat feugiat felis.</p>
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook text-light w-5"></i></a>
+                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin text-light"></i></a>
+                <a href="https://x.com/"><i class="bi bi-twitter text-light"></i></a>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light"></i></a>
+            </div>
+            <div class="col-lg-3 my-5">
+                <h3 class="text-light mb-5">Our Services</h3>
+                <a href="#" class="text-light text-decoration-none fs-5">Tech Solutions</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Digital Marketing</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Web Development</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">IT Consulting</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Data Analytics</a>
+            </div>
+            <div class="col-lg-3 my-5">
+                <h3 class="text-light mb-5">Useful Links</h3>
+                <a href="#" class="text-light text-decoration-none fs-5">What We Do</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Our Team</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Our Projects</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Faq ask</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Contact Us</a><br>
+                <a href="#" class="text-light text-decoration-none fs-5">Blog</a>
+            </div>
+            <div class="col-lg-3 my-5">
+                <h3 class="text-light mb-5">Recent Post</h3>
+                <div class="row">
+                    <div class="col-lg-5 mb-4">
+                        <img src="image (22).png" alt="image22" class="rounded">
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="#" class=" text-decoration-none text-light fs-6 mt-5 mb-4"><i
+                                class="bi bi-calendar3 text-success"></i>&nbsp;December 27, 2023</a>
+                        <a href="#" class="text-light text-decoration-none fs-6 fw-bold">Efficiency redefined through
+                            technology.
+                        </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="image (23).png" alt="image22" class="rounded">
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="#" class=" text-decoration-none text-light fs-6 mt-5 mb-4"><i
+                                class="bi bi-calendar3 text-success"></i>&nbsp;December 27, 2023</a>
+                        <a href="#" class="text-light text-decoration-none fs-6 fw-bold">Efficiency redefined through
+                            technology.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light">
+        <div class="text-light text-center fs-5 py-4">
+            &copy;<span class="text-success"> Qubohub</span> 2024. All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
